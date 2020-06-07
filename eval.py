@@ -25,14 +25,12 @@ def repeat(n_times):
     return decorator
 
 
-def small_trick(y_test, y_pred):
-    y_pred_new = np.zeros(y_pred.shape, np.bool)
-    sort_index = np.flip(np.argsort(y_pred, axis=1), 1)
-    for i in range(y_test.shape[0]):
-        num = int(sum(y_test[i]))
-        for j in range(num):
-            y_pred_new[i][sort_index[i][j]] = True
-    return y_pred_new
+def prob_to_one_hot(y_pred):
+    ret = np.zeros(y_pred.shape, np.bool)
+    indices = np.argmax(y_pred, axis=1)
+    for i in range(y_pred.shape[0]):
+        ret[i][indices[i]] = True
+    return ret
 
 
 def print_statistics(statistics, function_name):
@@ -69,7 +67,7 @@ def label_classification(embeddings, y, ratio):
     clf.fit(X_train, y_train)
 
     y_pred = clf.predict_proba(X_test)
-    y_pred = small_trick(y_test, y_pred)
+    y_pred = prob_to_one_hot(y_pred)
 
     micro = f1_score(y_test, y_pred, average="micro")
     macro = f1_score(y_test, y_pred, average="macro")
