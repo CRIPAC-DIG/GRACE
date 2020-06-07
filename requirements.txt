@@ -1,0 +1,5 @@
+torch >= 1.4.0
+torch-geometric >= 1.4.3
+sklearn
+numpy
+pyyaml
