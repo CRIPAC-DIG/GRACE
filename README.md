@@ -15,6 +15,8 @@ Install all dependencies using
 pip install -r requirements.txt
 ```
 
+If you encounter problems during installing torch-geometric, please refer to the installation manual on its [official website](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html).
+
 ## Usage
 
 Train and evaluate the model on a dataset by executing
