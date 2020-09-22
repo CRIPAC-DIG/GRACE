@@ -1,6 +1,6 @@
 # GRACE
 
-The official PyTorch implementation of deep GRAph Contrastive rEpresentation learning (GRACE).
+The official PyTorch implementation of deep **GRA**ph **C**ontrastive r**E**presentation learning (GRACE).
 
 ## Dependencies
 
@@ -27,13 +27,13 @@ The `--dataset` argument should be one of [ Cora, CiteSeer, PubMed, DBLP ].
 
 ## Citation
 
-If you use the code in your own research, please cite the following article:
+If you use our code in your own research, please cite the following article:
 
 ```
 @inproceedings{Zhu:2020vf,
   author = {Zhu, Yanqiao and Xu, Yichen and Yu, Feng and Liu, Qiang and Wu, Shu and Wang, Liang},
   title = {{Deep Graph Contrastive Representation Learning}},
-  booktitle = {ICLR Workshop on Graph Representation Learning and Beyond},
+  booktitle = {ICML Workshop on Graph Representation Learning and Beyond},
   year = {2020},
   url = {http://arxiv.org/abs/2006.04131}
 }
