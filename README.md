@@ -2,6 +2,8 @@
 
 The official PyTorch implementation of deep **GRA**ph **C**ontrastive r**E**presentation learning (GRACE).
 
+For a thorough resource collection of self-supervised learning methods on graphs, you may refer to [this](https://github.com/SXKDZ/awesome-self-supervised-learning-for-graphs) awesome list.
+
 ## Dependencies
 
 - torch 1.4.0
