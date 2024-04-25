@@ -43,9 +43,3 @@ Please cite our paper if you use the code:
   url = {http://arxiv.org/abs/2006.04131}
 }
 ```
-
-
-## Citation
-
-If you use our code in your own research, please cite the following article:
-
